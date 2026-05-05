@@ -1,16 +1,43 @@
-# mac_store_app
+# Multi-Vendor E-Commerce — Customer App
 
-A new Flutter project.
+Flutter mobile app for shoppers to browse products, manage their cart, and place orders on the multi-vendor marketplace.
+
+## Features
+
+- **Home** — browsing with promotional banners and product recommendations
+- **Categories** — browse by category and subcategory
+- **Product Details** — images, description, ratings, and related products
+- **Cart** — add/remove items, manage quantities
+- **Wishlist** — save products for later
+- **Checkout** — delivery address, payment selection, order confirmation
+- **Order History** — track order status from processing to delivery
+- **Stores** — browse products from individual vendors
+- **Authentication** — sign up, sign in, persistent sessions
+
+## Tech Stack
+
+- Flutter 3.5.3 (Dart)
+- Riverpod — state management
+- flutter_stripe — card payment processing
+- Cash on Delivery (COD) support
+- REST API via `http` package
+- shared_preferences — local token storage
+- google_fonts, custom_rating_bar
+
+## Related Repositories
+
+| Repo | Role |
+|------|------|
+| [backend-api](https://github.com/YoussefAlaaSaad/backend-api) | Node.js/Express REST API + MongoDB |
+| **customer-app** | Flutter mobile app for shoppers |
+| [vendor-app](https://github.com/YoussefAlaaSaad/vendor-app) | Flutter mobile app for vendors |
+| [admin-panel](https://github.com/YoussefAlaaSaad/admin-panel) | Flutter web dashboard for admins |
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Update the API base URL in the providers/services layer to point to your backend before running.
